@@ -1,14 +1,14 @@
 {
   "new_base": "f8e98b64e02ee4bcaf46c6cc7b86258fb66a27f7",
   "new_skip": 136,
-  "old_index": 585,
-  "old_name": "crates/rbitcoin-consensus/src/params.rs:13:5: replace bip34_block_hash -> BlockHash with Default::default()",
+  "old_index": 1691,
+  "old_name": "crates/rbitcoin-consensus/src/block/facts.rs:16:5: replace reject_non_final -> Result<(), ConsensusError> with Ok(())",
   "new_cap_used": true,
   "run_id": "42777483904",
   "new_len": 199,
   "old_len": 34108,
   "new_remaining": 63,
-  "old_remaining": 33523,
-  "completed_new": 136,
-  "completed_old": 585
+  "old_remaining": 33002,
+  "completed_new": 0,
+  "completed_old": 1106
 }
