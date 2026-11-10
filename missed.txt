@@ -1,0 +1,31 @@
+# 42777483904 1 6cf630f1d3433d1eae8bc5f3d5519c2a36f4d1b1
+MISSED   crates/rbitcoin-net/src/tip_accept.rs:264:58: replace == with != in take_lane_exemption in 107s build + 52s test
+MISSED   crates/rbitcoin-net/src/tip_accept.rs:280:22: delete ! in lane_send_guard in 9s build + 51s test
+MISSED   crates/rbitcoin-net/src/header_report.rs:125:34: replace match guard Some(old) == p.anchors.last().map(|a| a.1) with true in ChainHub::publish_ibd_header_tip in 107s build + 51s test
+MISSED   crates/rbitcoin-net/src/header_report.rs:126:27: replace <= with > in ChainHub::publish_ibd_header_tip in 7s build + 51s test
+MISSED   crates/rbitcoin-net/src/header_report.rs:219:13: delete match arm (None, other) in ChainHub::refresh_header_report in 13s build + 52s test
+MISSED   crates/rbitcoin-net/src/header_report.rs:313:12: delete ! in ChainHub::note_header_tip in 12s build + 52s test
+MISSED   crates/rbitcoin-net/src/header_report.rs:335:25: replace != with == in ChainHub::refresh_stored_header_tip in 7s build + 51s test
+MISSED   crates/rbitcoin-net/src/header_report.rs:387:25: replace != with == in ChainHub::stored_header_prefix in 7s build + 51s test
+MISSED   crates/rbitcoin-net/src/header_report.rs:407:21: replace <= with > in ChainHub::stored_hash_at in 6s build + 51s test
+MISSED   crates/rbitcoin-net/src/header_report.rs:439:31: replace != with == in ChainHub::check_ibd_header_proof in 7s build + 51s test
+MISSED   crates/rbitcoin-cli/src/lib.rs:275:74: replace || with && in valid_zone in 94s build + 16s test
+MISSED   crates/rbitcoin-cli/src/lib.rs:275:61: replace || with && in valid_zone in 1s build + 17s test
+MISSED   crates/rbitcoin-cli/src/lib.rs:275:53: replace == with != in valid_zone in 1s build + 17s test
+MISSED   crates/rbitcoin-cli/src/lib.rs:275:66: replace == with != in valid_zone in 1s build + 16s test
+MISSED   crates/rbitcoin-cli/src/lib.rs:275:79: replace == with != in valid_zone in 1s build + 16s test
+MISSED   crates/rbitcoin-cli/src/lib.rs:295:21: replace && with || in inet_aton_label in 1s build + 17s test
+MISSED   crates/rbitcoin-cli/src/lib.rs:452:43: replace && with || in dispatch_call in 1s build + 16s test
+MISSED   crates/rbitcoin-consensus/src/block/mod.rs:231:27: replace < with > in validate_block_structure_with_pres in 9s build + 100s test
+MISSED   crates/rbitcoin-consensus/src/block/mod.rs:938:9: replace JobPrevouts::is_empty -> bool with true in 9s build + 99s test
+MISSED   crates/rbitcoin-consensus/src/block/mod.rs:938:9: replace JobPrevouts::is_empty -> bool with false in 9s build + 101s test
+MISSED   crates/rbitcoin-consensus/src/block/mod.rs:938:20: replace == with != in JobPrevouts::is_empty in 9s build + 100s test
+MISSED   crates/rbitcoin-consensus/src/block/mod.rs:1242:17: replace > with >= in tx_value_out in 10s build + 99s test
+MISSED   crates/rbitcoin-consensus/src/header.rs:295:20: replace match guard Target::from_compact(base) > r.ceiling with false in retarget_bits in 122s build + 101s test
+MISSED   crates/rbitcoin-consensus/src/header.rs:295:47: replace > with == in retarget_bits in 9s build + 100s test
+MISSED   crates/rbitcoin-consensus/src/header.rs:295:47: replace > with >= in retarget_bits in 8s build + 99s test
+MISSED   crates/rbitcoin-consensus/src/header.rs:302:47: replace < with <= in retarget_bits in 10s build + 103s test
+MISSED   crates/rbitcoin-consensus/src/id_map.rs:22:24: replace |= with &= in <impl Hasher for TxidHasher>::write in 119s build + 100s test
+MISSED   crates/rbitcoin-consensus/src/id_map.rs:22:40: replace << with >> in <impl Hasher for TxidHasher>::write in 9s build + 100s test
+MISSED   crates/rbitcoin-consensus/src/id_map.rs:22:46: replace * with + in <impl Hasher for TxidHasher>::write in 8s build + 99s test
+MISSED   crates/rbitcoin-consensus/src/id_map.rs:22:46: replace * with / in <impl Hasher for TxidHasher>::write in 9s build + 100s test
