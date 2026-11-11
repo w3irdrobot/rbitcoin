@@ -1,14 +1,14 @@
 {
   "new_base": "6cf630f1d3433d1eae8bc5f3d5519c2a36f4d1b1",
   "new_skip": 0,
-  "old_index": 3728,
-  "old_name": "crates/rbitcoin-esplora/src/tx_json.rs:282:21: replace != with == in build_tx_json_pruned",
+  "old_index": 4168,
+  "old_name": "crates/rbitcoin-ibd/src/ibd/assign.rs:749:39: replace && with || in need_hash_at",
   "new_cap_used": false,
   "run_id": "42977544420",
-  "new_len": 199,
-  "old_len": 34108,
+  "new_len": 0,
+  "old_len": 34307,
   "new_remaining": 0,
-  "old_remaining": 32071,
-  "completed_new": 63,
-  "completed_old": 2037
+  "old_remaining": 33881,
+  "completed_new": 0,
+  "completed_old": 426
 }
