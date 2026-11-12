@@ -481,3 +481,16 @@ MISSED   crates/rbitcoin-ibd/src/ibd/confirm/mod.rs:2502:38: replace || with && 
 MISSED   crates/rbitcoin-ibd/src/ibd/confirm/mod.rs:2620:40: replace || with && in spawn_confirm_engine in 2s build + 14s test
 MISSED   crates/rbitcoin-ibd/src/ibd/confirm/mod.rs:2680:45: replace || with && in spawn_confirm_engine in 2s build + 13s test
 MISSED   crates/rbitcoin-ibd/src/ibd/confirm/mod.rs:2834:40: replace || with && in spawn_confirm_engine in 2s build + 13s test
+# 43177460034 2 6cf630f1d3433d1eae8bc5f3d5519c2a36f4d1b1
+MISSED   crates/rbitcoin-ibd/src/ibd/confirm/mod.rs:2843:55: replace / with % in spawn_confirm_engine in 102s build + 70s test
+MISSED   crates/rbitcoin-ibd/src/ibd/confirm/mod.rs:2843:55: replace / with * in spawn_confirm_engine in 3s build + 70s test
+MISSED   crates/rbitcoin-ibd/src/ibd/confirm/mod.rs:2860:36: replace > with == in spawn_confirm_engine in 3s build + 69s test
+MISSED   crates/rbitcoin-ibd/src/ibd/confirm/mod.rs:2860:36: replace > with < in spawn_confirm_engine in 3s build + 68s test
+MISSED   crates/rbitcoin-ibd/src/ibd/confirm/mod.rs:2860:36: replace > with >= in spawn_confirm_engine in 3s build + 69s test
+MISSED   crates/rbitcoin-ibd/src/ibd/confirm/mod.rs:3194:20: delete ! in spawn_confirm_engine in 3s build + 69s test
+MISSED   crates/rbitcoin-ibd/src/ibd/confirm/mod.rs:3254:19: replace == with != in offer_confirm_ready in 3s build + 69s test
+MISSED   crates/rbitcoin-ibd/src/ibd/confirm/mod.rs:3256:70: replace + with - in offer_confirm_ready in 3s build + 68s test
+MISSED   crates/rbitcoin-ibd/src/ibd/confirm/mod.rs:3256:70: replace + with * in offer_confirm_ready in 3s build + 69s test
+MISSED   crates/rbitcoin-ibd/src/ibd/confirm/mod.rs:3257:27: replace || with && in offer_confirm_ready in 3s build + 68s test
+MISSED   crates/rbitcoin-ibd/src/ibd/confirm/mod.rs:3257:22: replace <= with > in offer_confirm_ready in 3s build + 69s test
+MISSED   crates/rbitcoin-ibd/src/ibd/events/mod.rs:1014:21: replace match guard headers.is_empty() with false in answer_probe in 1s build + 16s test
