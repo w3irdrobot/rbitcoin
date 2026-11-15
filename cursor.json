@@ -1,14 +1,14 @@
 {
   "new_base": "6cf630f1d3433d1eae8bc5f3d5519c2a36f4d1b1",
   "new_skip": 655,
-  "old_index": 7999,
-  "old_name": "crates/rbitcoin-mempool/src/fee_est.rs:408:18: replace - with / in fee_at_target_sat_kvb",
+  "old_index": 9500,
+  "old_name": "crates/rbitcoin-net/src/chain.rs:1692:9: replace ChainHub::invalid_blocks -> Vec<BlockHash> with vec![]",
   "new_cap_used": true,
   "run_id": "43688956957",
   "new_len": 4304,
   "old_len": 32728,
   "new_remaining": 3649,
-  "old_remaining": 31934,
-  "completed_new": 655,
-  "completed_old": 794
+  "old_remaining": 31227,
+  "completed_new": 0,
+  "completed_old": 1501
 }

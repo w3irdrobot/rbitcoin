@@ -936,3 +936,25 @@ MISSED   crates/rbitcoin-mempool/src/fee_est.rs:314:52: replace > with >= in pub
 MISSED   crates/rbitcoin-mempool/src/fee_est.rs:392:15: replace || with && in fee_at_target_sat_kvb in 0s build + 0s test
 MISSED   crates/rbitcoin-mempool/src/fee_est.rs:395:15: replace > with == in fee_at_target_sat_kvb in 0s build + 0s test
 MISSED   crates/rbitcoin-mempool/src/fee_est.rs:395:15: replace > with >= in fee_at_target_sat_kvb in 0s build + 0s test
+# 43688956957 2 b86a1800e3117db21ef89e518bf66d647907f524
+MISSED   crates/rbitcoin-mempool/src/graph.rs:1019:37: replace != with == in TxGraph::mining_chunks_for_delta in 17s build + 65s test
+MISSED   crates/rbitcoin-mempool/src/linearize.rs:111:57: replace & with | in TxSet::intersection in 79s build + 64s test
+MISSED   crates/rbitcoin-mempool/src/linearize.rs:119:9: replace TxSet::is_empty -> bool with false in 7s build + 64s test
+MISSED   crates/rbitcoin-mempool/src/linearize.rs:139:25: replace * with / in TxSet::iter in 7s build + 65s test
+MISSED   crates/rbitcoin-mempool/src/linearize.rs:228:21: delete match arm Ordering::Greater in DepGraph::linearize in 7s build + 64s test
+MISSED   crates/rbitcoin-mempool/src/linearize.rs:262:40: replace + with * in DepGraph::output_order in 7s build + 65s test
+MISSED   crates/rbitcoin-mempool/src/linearize.rs:281:25: delete match arm Ordering::Greater in DepGraph::output_order in 8s build + 66s test
+MISSED   crates/rbitcoin-mempool/src/linearize.rs:297:21: delete match arm Ordering::Greater in DepGraph::output_order in 7s build + 66s test
+MISSED   crates/rbitcoin-mempool/src/linearize.rs:314:28: replace == with != in DepGraph::post_linearize in 8s build + 65s test
+MISSED   crates/rbitcoin-mempool/src/orphanage.rs:487:16: replace == with != in Orphanage::forget_taken_gen in 77s build + 64s test
+MISSED   crates/rbitcoin-mempool/src/store.rs:650:50: replace * with / in Mempool::live_accept_secs in 75s build + 64s test
+MISSED   crates/rbitcoin-mempool/src/store.rs:767:33: replace + with * in Mempool::testing_set_slot_cap in 8s build + 64s test
+MISSED   crates/rbitcoin-mempool/src/store.rs:767:50: replace * with + in Mempool::testing_set_slot_cap in 8s build + 64s test
+MISSED   crates/rbitcoin-mempool/src/store.rs:767:50: replace * with / in Mempool::testing_set_slot_cap in 7s build + 65s test
+MISSED   crates/rbitcoin-mempool/src/store.rs:825:50: replace * with / in Mempool::set_slot_trust_kept in 7s build + 64s test
+MISSED   crates/rbitcoin-mempool/src/store.rs:834:16: replace > with >= in Mempool::reserve_body in 7s build + 64s test
+MISSED   crates/rbitcoin-net/src/chain.rs:929:33: replace | with ^ in ChainHub::note_block_assembled in 6s build + 45s test
+MISSED   crates/rbitcoin-net/src/chain.rs:1067:33: replace || with && in ChainHub::maintain_pool_after_ibd in 7s build + 45s test
+MISSED   crates/rbitcoin-net/src/chain.rs:1514:21: replace || with && in ChainHub::chaintips in 4s build + 20s test
+MISSED   crates/rbitcoin-net/src/chain.rs:1515:24: delete ! in ChainHub::chaintips in 3s build + 20s test
+MISSED   crates/rbitcoin-net/src/chain.rs:1684:9: replace ChainHub::invalid_marks_on_disk -> bool with false in 4s build + 20s test
