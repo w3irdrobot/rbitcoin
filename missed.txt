@@ -1003,3 +1003,10 @@ MISSED   crates/rbitcoin-net/src/chain.rs:2258:62: replace || with && in ChainHu
 MISSED   crates/rbitcoin-net/src/chain.rs:2578:43: replace == with != in ChainHub::mine_paying_block in 5s build + 29s test
 MISSED   crates/rbitcoin-net/src/chain.rs:2788:20: replace > with == in ChainHub::generate_paying_async in 6s build + 29s test
 MISSED   crates/rbitcoin-net/src/chain.rs:2788:20: replace > with >= in ChainHub::generate_paying_async in 6s build + 29s test
+# 43822859299 2 b86a1800e3117db21ef89e518bf66d647907f524
+MISSED   crates/rbitcoin-net/src/chain.rs:3165:28: replace && with || in ChainHub::invalidate_block_inner in 7s build + 50s test
+MISSED   crates/rbitcoin-net/src/chain.rs:3919:12: delete ! in ChainHub::finish_branch_reorg in 6s build + 50s test
+MISSED   crates/rbitcoin-net/src/chain.rs:4202:9: replace ChainHub::wait_tip_stable_for_rpc with () in 7s build + 50s test
+MISSED   crates/rbitcoin-net/src/chain.rs:4767:9: replace ChainHub::reset_side_branch_walks with () in 84s build + 50s test
+MISSED   crates/rbitcoin-net/src/chain.rs:4772:9: replace ChainHub::side_branch_walks -> u64 with 1 in 7s build + 49s test
+MISSED   crates/rbitcoin-net/src/chain.rs:4787:9: replace ChainHub::take_min_diff_walk_steps -> u64 with 1 in 7s build + 49s test
