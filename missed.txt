@@ -1010,3 +1010,48 @@ MISSED   crates/rbitcoin-net/src/chain.rs:4202:9: replace ChainHub::wait_tip_sta
 MISSED   crates/rbitcoin-net/src/chain.rs:4767:9: replace ChainHub::reset_side_branch_walks with () in 84s build + 50s test
 MISSED   crates/rbitcoin-net/src/chain.rs:4772:9: replace ChainHub::side_branch_walks -> u64 with 1 in 7s build + 49s test
 MISSED   crates/rbitcoin-net/src/chain.rs:4787:9: replace ChainHub::take_min_diff_walk_steps -> u64 with 1 in 7s build + 49s test
+# 44047316562 1 b86a1800e3117db21ef89e518bf66d647907f524
+MISSED   crates/rbitcoin-ibd/src/ibd/header_walk.rs:1209:9: delete field work from struct WalkTip expression in cut_back_to in 2s build + 13s test
+MISSED   crates/rbitcoin-ibd/src/ibd/header_walk.rs:1210:9: delete field header from struct WalkTip expression in cut_back_to in 2s build + 12s test
+MISSED   crates/rbitcoin-ibd/src/ibd/header_walk.rs:1211:9: delete field times from struct WalkTip expression in cut_back_to in 2s build + 13s test
+MISSED   crates/rbitcoin-ibd/src/ibd/header_walk.rs:1212:9: delete field diff from struct WalkTip expression in cut_back_to in 2s build + 12s test
+MISSED   crates/rbitcoin-ibd/src/ibd/header_walk.rs:1214:9: delete field milestone_prev from struct WalkTip expression in cut_back_to in 2s build + 13s test
+MISSED   crates/rbitcoin-ibd/src/ibd/header_walk.rs:1215:9: delete field milestone_header from struct WalkTip expression in cut_back_to in 2s build + 12s test
+MISSED   crates/rbitcoin-ibd/src/ibd/progress.rs:131:15: replace > with == in QueuedHashSpan::load in 85s build + 53s test
+MISSED   crates/rbitcoin-ibd/src/ibd/progress.rs:131:15: replace > with < in QueuedHashSpan::load in 3s build + 52s test
+MISSED   crates/rbitcoin-ibd/src/ibd/progress.rs:131:15: replace > with >= in QueuedHashSpan::load in 3s build + 52s test
+MISSED   crates/rbitcoin-ibd/src/ibd/progress.rs:152:19: replace < with == in QueuedHashSpan::hash_at in 3s build + 52s test
+MISSED   crates/rbitcoin-ibd/src/ibd/progress.rs:152:19: replace < with > in QueuedHashSpan::hash_at in 3s build + 52s test
+MISSED   crates/rbitcoin-ibd/src/ibd/progress.rs:152:19: replace < with <= in QueuedHashSpan::hash_at in 3s build + 52s test
+MISSED   crates/rbitcoin-ibd/src/ibd/progress.rs:152:39: replace > with >= in QueuedHashSpan::hash_at in 3s build + 52s test
+MISSED   crates/rbitcoin-ibd/src/ibd/reorg.rs:596:36: replace > with >= in prepare_header_rewind in 84s build + 53s test
+MISSED   crates/rbitcoin-ibd/src/ibd/state.rs:119:9: replace InflightReq::retired_ids -> impl Iterator<Item = usize>+'_ with ::std::iter::once(0) in 79s build + 53s test
+MISSED   crates/rbitcoin-ibd/src/ibd/state.rs:124:9: replace InflightReq::holder_ids -> impl Iterator<Item = usize>+'_ with ::std::iter::once(0) in 7s build + 53s test
+MISSED   crates/rbitcoin-log/src/lib.rs:310:46: replace < with <= in info_repeated in 13s build + 76s test
+MISSED   crates/rbitcoin-mempool/src/fee_analog.rs:43:34: replace + with * in lowest_hurdle in 93s build + 67s test
+MISSED   crates/rbitcoin-net/src/asmap.rs:63:9: replace AsMap::is_empty -> bool with true in 86s build + 46s test
+MISSED   crates/rbitcoin-net/src/asmap.rs:63:9: replace AsMap::is_empty -> bool with false in 6s build + 46s test
+MISSED   crates/rbitcoin-net/src/cache.rs:139:41: replace - with + in BlockCache::push_best in 84s build + 45s test
+MISSED   crates/rbitcoin-net/src/cache.rs:139:41: replace - with / in BlockCache::push_best in 6s build + 46s test
+MISSED   crates/rbitcoin-net/src/chain.rs:151:9: replace HeldBodies::is_empty -> bool with true in 73s build + 46s test
+MISSED   crates/rbitcoin-net/src/chain.rs:151:9: replace HeldBodies::is_empty -> bool with false in 7s build + 45s test
+MISSED   crates/rbitcoin-net/src/chain.rs:430:9: replace HeaderTips::is_empty -> bool with true in 7s build + 45s test
+MISSED   crates/rbitcoin-net/src/chain.rs:430:9: replace HeaderTips::is_empty -> bool with false in 6s build + 46s test
+MISSED   crates/rbitcoin-net/src/chain.rs:2650:20: replace > with == in ChainHub::confirm_empty_regtest in 7s build + 45s test
+MISSED   crates/rbitcoin-net/src/chain.rs:2650:20: replace > with >= in ChainHub::confirm_empty_regtest in 6s build + 46s test
+MISSED   crates/rbitcoin-net/src/chain.rs:2682:57: replace - with + in ChainHub::confirm_empty_regtest in 6s build + 46s test
+MISSED   crates/rbitcoin-net/src/chain.rs:2682:57: replace - with / in ChainHub::confirm_empty_regtest in 7s build + 46s test
+MISSED   crates/rbitcoin-net/src/chain.rs:4709:20: replace < with <= in ChainHub::disconnect_harvest_in_commit in 10s build + 45s test
+MISSED   crates/rbitcoin-net/src/chain.rs:4792:9: replace ChainHub::note_path_work_step with () in 7s build + 45s test
+MISSED   crates/rbitcoin-net/src/chain.rs:4797:9: replace ChainHub::take_path_work_steps -> u64 with 0 in 7s build + 46s test
+MISSED   crates/rbitcoin-net/src/chain.rs:4797:9: replace ChainHub::take_path_work_steps -> u64 with 1 in 6s build + 46s test
+MISSED   crates/rbitcoin-net/src/chain.rs:4802:9: replace ChainHub::note_stored_header_lookup with () in 7s build + 45s test
+MISSED   crates/rbitcoin-net/src/chain.rs:4807:9: replace ChainHub::take_stored_header_lookups -> u64 with 0 in 6s build + 45s test
+MISSED   crates/rbitcoin-net/src/chain.rs:4807:9: replace ChainHub::take_stored_header_lookups -> u64 with 1 in 6s build + 45s test
+MISSED   crates/rbitcoin-net/src/codec.rs:38:52: replace + with * in 73s build + 45s test
+MISSED   crates/rbitcoin-net/src/codec.rs:38:48: replace + with - in 6s build + 45s test
+MISSED   crates/rbitcoin-net/src/codec.rs:38:48: replace + with * in 6s build + 45s test
+MISSED   crates/rbitcoin-net/src/codec.rs:38:43: replace + with * in 5s build + 45s test
+MISSED   crates/rbitcoin-net/src/codec.rs:38:74: replace * with + in 6s build + 45s test
+MISSED   crates/rbitcoin-net/src/codec.rs:38:74: replace * with / in 6s build + 45s test
+MISSED   crates/rbitcoin-net/src/compact.rs:161:40: replace && with || in cmpct_init_data_ok in 4s build + 21s test
