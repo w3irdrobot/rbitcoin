@@ -1063,3 +1063,18 @@ MISSED   crates/rbitcoin-net/src/ephemeral.rs:217:20: delete ! in spawn_isolated
 MISSED   crates/rbitcoin-net/src/error.rs:115:13: delete match arm NetError::ConnectFailed{rules:Some(e), ..} in NetError::consensus_rules in 111s build + 55s test
 MISSED   crates/rbitcoin-net/src/error.rs:135:13: delete match arm NetError::ConnectFailed{rules:Some(e), msg, ..} in NetError::is_mutated in 7s build + 55s test
 MISSED   crates/rbitcoin-net/src/error.rs:141:21: replace || with && in NetError::is_mutated in 7s build + 55s test
+# 44262857463 1 b86a1800e3117db21ef89e518bf66d647907f524
+MISSED   crates/rbitcoin-net/src/eviction.rs:112:35: replace > with >= in newest_in_largest_group in 83s build + 49s test
+MISSED   crates/rbitcoin-net/src/eviction.rs:113:58: replace && with || in newest_in_largest_group in 6s build + 49s test
+MISSED   crates/rbitcoin-net/src/eviction.rs:113:40: replace == with != in newest_in_largest_group in 6s build + 49s test
+MISSED   crates/rbitcoin-net/src/eviction.rs:113:66: replace > with == in newest_in_largest_group in 6s build + 49s test
+MISSED   crates/rbitcoin-net/src/eviction.rs:129:24: replace > with >= in newest_in_largest_group in 6s build + 49s test
+MISSED   crates/rbitcoin-net/src/eviction.rs:129:77: replace < with == in newest_in_largest_group in 6s build + 49s test
+MISSED   crates/rbitcoin-net/src/eviction.rs:129:77: replace < with > in newest_in_largest_group in 6s build + 49s test
+MISSED   crates/rbitcoin-net/src/eviction.rs:129:77: replace < with <= in newest_in_largest_group in 6s build + 49s test
+MISSED   crates/rbitcoin-net/src/listen.rs:75:13: replace > with == in listener_fd_reserve in 83s build + 50s test
+MISSED   crates/rbitcoin-net/src/listen.rs:75:13: replace > with < in listener_fd_reserve in 7s build + 50s test
+MISSED   crates/rbitcoin-net/src/listen.rs:75:13: replace > with >= in listener_fd_reserve in 6s build + 50s test
+MISSED   crates/rbitcoin-net/src/listen.rs:75:20: replace + with - in listener_fd_reserve in 7s build + 49s test
+MISSED   crates/rbitcoin-net/src/listen.rs:75:20: replace + with * in listener_fd_reserve in 6s build + 50s test
+MISSED   crates/rbitcoin-net/src/listen.rs:78:15: replace / with % in listener_fd_reserve in 6s build + 49s test
