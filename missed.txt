@@ -1120,3 +1120,16 @@ MISSED   crates/rbitcoin-net/src/peer.rs:7677:58: replace + with - in PathWorkMe
 MISSED   crates/rbitcoin-net/src/peer.rs:7781:13: replace && with || in PathWorkMemo::path_connects in 6s build + 44s test
 MISSED   crates/rbitcoin-net/src/peer.rs:7799:27: replace >= with < in PathWorkMemo::path_fails_claimed_pow in 6s build + 44s test
 MISSED   crates/rbitcoin-net/src/msg_decode.rs:59:5: replace ctrl_decode_permits -> usize with 1 in 82s build + 45s test
+# 44483541484 1 b86a1800e3117db21ef89e518bf66d647907f524
+MISSED   crates/rbitcoin-net/src/peer.rs:7815:21: replace == with != in PathWorkMemo::path_fails_claimed_pow in 108s build + 56s test
+MISSED   crates/rbitcoin-net/src/peer.rs:7839:56: replace < with <= in PathWorkMemo::better_path_connects in 7s build + 55s test
+MISSED   crates/rbitcoin-net/src/peer.rs:7866:36: replace match guard path.len() + 1 >= PENDING_WALK_LIMIT with false in memo_path_work in 15s build + 55s test
+MISSED   crates/rbitcoin-net/src/peer.rs:7866:47: replace + with * in memo_path_work in 15s build + 56s test
+MISSED   crates/rbitcoin-net/src/peer.rs:7882:22: replace + with * in memo_path_work in 7s build + 55s test
+MISSED   crates/rbitcoin-net/src/peer.rs:8108:21: replace != with == in any_header_path_meets_minwork in 7s build + 56s test
+MISSED   crates/rbitcoin-net/src/peer.rs:8147:33: replace || with && in header_path_above in 7s build + 56s test
+MISSED   crates/rbitcoin-net/src/peers.rs:66:9: replace + with - in compact_block_len in 109s build + 55s test
+MISSED   crates/rbitcoin-net/src/peers.rs:1467:22: replace > with == in LivePeer::claim_hb_body_fanout in 7s build + 55s test
+MISSED   crates/rbitcoin-net/src/peers.rs:1467:22: replace > with < in LivePeer::claim_hb_body_fanout in 7s build + 55s test
+MISSED   crates/rbitcoin-net/src/peers.rs:2245:15: replace == with != in <impl Drop for IncompleteInbound>::drop in 7s build + 56s test
+MISSED   crates/rbitcoin-net/src/peers.rs:4315:29: replace == with != in PeerHub::full_outbound_count in 7s build + 55s test
