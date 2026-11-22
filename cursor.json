@@ -1,14 +1,14 @@
 {
   "new_base": "6cf630f1d3433d1eae8bc5f3d5519c2a36f4d1b1",
   "new_skip": 2913,
-  "old_index": 12544,
-  "old_name": "crates/rbitcoin-net/src/peers.rs:1648:39: replace && with || in LivePeer::take_ping_send",
+  "old_index": 13026,
+  "old_name": "crates/rbitcoin-net/src/peers.rs:4182:72: delete ! in PeerHub::maybe_select_hb",
   "new_cap_used": true,
   "run_id": "44998364462",
   "new_len": 4304,
   "old_len": 32728,
   "new_remaining": 1391,
-  "old_remaining": 32497,
-  "completed_new": 324,
-  "completed_old": 231
+  "old_remaining": 32246,
+  "completed_new": 0,
+  "completed_old": 482
 }
