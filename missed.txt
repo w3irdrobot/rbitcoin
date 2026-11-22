@@ -1437,3 +1437,76 @@ MISSED   crates/rbitcoin-net/src/peers.rs:603:9: replace LivePeer::raw_sent -> u
 MISSED   crates/rbitcoin-net/src/peers.rs:621:27: replace += with *= in LivePeer::note_recv in 4s build + 25s test
 MISSED   crates/rbitcoin-net/src/peers.rs:641:27: replace += with -= in LivePeer::note_sent in 4s build + 24s test
 MISSED   crates/rbitcoin-net/src/peers.rs:641:27: replace += with *= in LivePeer::note_sent in 4s build + 25s test
+# 44998364462 1 b86a1800e3117db21ef89e518bf66d647907f524
+MISSED   crates/rbitcoin-query/src/scripthash.rs:624:17: delete field limit from struct HistoryFilter expression in Query::history_page_full in 2s build + 5s test
+MISSED   crates/rbitcoin-query/src/scripthash.rs:625:17: delete field after_txid from struct HistoryFilter expression in Query::history_page_full in 1s build + 5s test
+MISSED   crates/rbitcoin-query/src/sp_tweaks.rs:257:37: replace || with && in Query::refuse_adding_prune_with_tweaks in 85s build + 68s test
+MISSED   crates/rbitcoin-query/src/sp_tweaks.rs:264:16: replace < with == in Query::refuse_adding_prune_with_tweaks in 9s build + 68s test
+MISSED   crates/rbitcoin-query/src/sp_tweaks.rs:264:16: replace < with <= in Query::refuse_adding_prune_with_tweaks in 8s build + 68s test
+MISSED   crates/rbitcoin-query/src/sp_tweaks.rs:317:38: replace < with <= in Query::witnessed_pruneheight in 9s build + 67s test
+MISSED   crates/rbitcoin-query/src/sp_tweaks.rs:353:56: replace < with == in Query::tweak_seal_blocks_prune in 9s build + 68s test
+MISSED   crates/rbitcoin-query/src/sp_tweaks.rs:353:56: replace < with > in Query::tweak_seal_blocks_prune in 9s build + 68s test
+MISSED   crates/rbitcoin-query/src/sp_tweaks.rs:353:56: replace < with <= in Query::tweak_seal_blocks_prune in 9s build + 68s test
+MISSED   crates/rbitcoin-query/src/sp_tweaks.rs:362:9: replace Query::refuse_prune_advance_past_tweaks -> Result<(), QueryError> with Ok(()) in 8s build + 68s test
+MISSED   crates/rbitcoin-query/src/sp_tweaks.rs:362:12: delete ! in Query::refuse_prune_advance_past_tweaks in 9s build + 68s test
+MISSED   crates/rbitcoin-query/src/spend_sync.rs:87:58: replace || with && in run in 85s build + 68s test
+MISSED   crates/rbitcoin-query/src/spend_sync.rs:87:69: replace >= with < in run in 9s build + 68s test
+MISSED   crates/rbitcoin-query/src/spend_sync.rs:88:21: delete ! in run in 8s build + 68s test
+MISSED   crates/rbitcoin-query/src/testutil.rs:118:39: replace && with || in <impl FixtureChain for Query>::commit_class_a_only in 86s build + 68s test
+MISSED   crates/rbitcoin-query/src/write_create_loc.rs:116:40: replace < with <= in WriteCreateLocRam::covering_height in 85s build + 68s test
+MISSED   crates/rbitcoin-query/src/write_create_loc.rs:120:68: replace < with > in WriteCreateLocRam::covering_height in 8s build + 68s test
+MISSED   crates/rbitcoin-query/src/write_create_loc.rs:120:48: replace - with / in WriteCreateLocRam::covering_height in 9s build + 68s test
+MISSED   crates/rbitcoin-query/src/write_create_loc.rs:145:60: replace - with + in WriteCreateLocRam::rebuild_covers in 8s build + 68s test
+MISSED   crates/rbitcoin-query/src/write_create_loc.rs:145:60: replace - with / in WriteCreateLocRam::rebuild_covers in 8s build + 68s test
+MISSED   crates/rbitcoin-query/src/block_pipeline.rs:1119:13: replace || with && in structural_load_durable_spent in 8s build + 69s test
+MISSED   crates/rbitcoin-query/src/index_writebehind.rs:180:8: delete ! in refuse_pruned_tweak_gap in 84s build + 68s test
+MISSED   crates/rbitcoin-query/src/index_writebehind.rs:189:12: replace < with == in refuse_pruned_tweak_gap in 8s build + 67s test
+MISSED   crates/rbitcoin-query/src/index_writebehind.rs:189:12: replace < with > in refuse_pruned_tweak_gap in 8s build + 68s test
+MISSED   crates/rbitcoin-query/src/index_writebehind.rs:189:12: replace < with <= in refuse_pruned_tweak_gap in 9s build + 68s test
+MISSED   crates/rbitcoin-query/src/index_writebehind.rs:195:13: replace > with >= in refuse_pruned_tweak_gap in 8s build + 68s test
+MISSED   crates/rbitcoin-query/src/index_writebehind.rs:212:20: replace && with || in tweak_follow_for in 9s build + 67s test
+MISSED   crates/rbitcoin-query/src/sp_read.rs:81:36: replace <= with > in tweaks_from_pruned_keep in 10s build + 68s test
+MISSED   crates/rbitcoin-query/src/confirm_run/phases.rs:434:9: replace || with && in structural_run in 85s build + 68s test
+MISSED   crates/rbitcoin-query/src/confirm_run/write.rs:648:36: replace > with == in replay_spend_annotations in 8s build + 68s test
+MISSED   crates/rbitcoin-query/src/confirm_run/write.rs:648:36: replace > with < in replay_spend_annotations in 8s build + 67s test
+MISSED   crates/rbitcoin-query/src/confirm_run/write.rs:648:36: replace > with >= in replay_spend_annotations in 8s build + 68s test
+MISSED   crates/rbitcoin-query/src/confirm_run/write.rs:811:45: replace && with || in annotate_slots_from_connected_hash in 8s build + 67s test
+MISSED   crates/rbitcoin-rpc/src/auth.rs:223:21: delete ! in write_token_file in 69s build + 19s test
+MISSED   crates/rbitcoin-rpc/src/auth.rs:231:19: replace match guard e.kind() != std::io::ErrorKind::NotFound with false in write_token_file in 3s build + 19s test
+MISSED   crates/rbitcoin-rpc/src/server.rs:28:39: replace * with + in 69s build + 18s test
+MISSED   crates/rbitcoin-rpc/src/server.rs:741:68: replace > with >= in read_unread_body in 2s build + 19s test
+MISSED   crates/rbitcoin-rpc/src/server.rs:805:9: replace <impl HttpBody for TrackedBody>::is_end_stream -> bool with true in 3s build + 19s test
+MISSED   crates/rbitcoin-rpc/src/server.rs:805:9: replace <impl HttpBody for TrackedBody>::is_end_stream -> bool with false in 2s build + 19s test
+MISSED   crates/rbitcoin-rpc/src/server.rs:810:9: replace <impl HttpBody for TrackedBody>::size_hint -> SizeHint with Default::default() in 3s build + 19s test
+MISSED   crates/rbitcoin-rpc/src/methods/chain.rs:1401:35: replace match guard s == BASIC_FILTER_INDEX with true in getindexinfo in 68s build + 19s test
+MISSED   crates/rbitcoin-store/src/bdz.rs:784:77: replace || with && in stream_g_pages in 85s build + 73s test
+MISSED   crates/rbitcoin-store/src/bdz.rs:784:62: replace || with && in stream_g_pages in 9s build + 73s test
+MISSED   crates/rbitcoin-net/src/peers.rs:755:34: replace * with + in LivePeer::take_self_announce_msg in 75s build + 46s test
+MISSED   crates/rbitcoin-net/src/peers.rs:755:34: replace * with / in LivePeer::take_self_announce_msg in 6s build + 45s test
+MISSED   crates/rbitcoin-net/src/peers.rs:755:29: replace * with + in LivePeer::take_self_announce_msg in 6s build + 45s test
+MISSED   crates/rbitcoin-net/src/peers.rs:758:22: replace && with || in LivePeer::take_self_announce_msg in 6s build + 46s test
+MISSED   crates/rbitcoin-net/src/peers.rs:758:29: replace < with <= in LivePeer::take_self_announce_msg in 6s build + 47s test
+MISSED   crates/rbitcoin-net/src/peers.rs:863:9: replace LivePeer::queue_self_announce_if_due with () in 11s build + 46s test
+MISSED   crates/rbitcoin-net/src/peers.rs:901:32: replace == with != in LivePeer::tcp_fin in 11s build + 46s test
+MISSED   crates/rbitcoin-net/src/peers.rs:909:9: replace LivePeer::take_writer_abort -> Option<tokio::task::AbortHandle> with None in 9s build + 46s test
+MISSED   crates/rbitcoin-net/src/peers.rs:917:9: replace LivePeer::take_session_abort -> Option<tokio::task::AbortHandle> with None in 6s build + 46s test
+MISSED   crates/rbitcoin-net/src/peers.rs:933:9: replace LivePeer::clear_out_tx with () in 7s build + 46s test
+MISSED   crates/rbitcoin-net/src/peers.rs:1026:20: replace >= with < in LivePeer::note_block_from_peer in 6s build + 46s test
+MISSED   crates/rbitcoin-net/src/peers.rs:1048:9: replace LivePeer::advertises_network -> bool with true in 6s build + 45s test
+MISSED   crates/rbitcoin-net/src/peers.rs:1048:23: replace & with | in LivePeer::advertises_network in 6s build + 46s test
+MISSED   crates/rbitcoin-net/src/peers.rs:1048:23: replace & with ^ in LivePeer::advertises_network in 6s build + 46s test
+MISSED   crates/rbitcoin-net/src/peers.rs:1053:9: replace LivePeer::can_serve_blocks -> bool with true in 7s build + 46s test
+MISSED   crates/rbitcoin-net/src/peers.rs:1055:23: replace & with | in LivePeer::can_serve_blocks in 7s build + 47s test
+MISSED   crates/rbitcoin-net/src/peers.rs:1055:23: replace & with ^ in LivePeer::can_serve_blocks in 6s build + 46s test
+MISSED   crates/rbitcoin-net/src/peers.rs:1055:30: replace | with ^ in LivePeer::can_serve_blocks in 6s build + 46s test
+MISSED   crates/rbitcoin-net/src/peers.rs:1144:9: replace LivePeer::last_inv_sequence -> u64 with 1 in 6s build + 47s test
+MISSED   crates/rbitcoin-net/src/peers.rs:1148:9: replace LivePeer::inv_to_send -> u32 with 0 in 6s build + 46s test
+MISSED   crates/rbitcoin-net/src/peers.rs:1376:9: replace LivePeer::note_last_block with () in 7s build + 47s test
+MISSED   crates/rbitcoin-net/src/peers.rs:1389:9: replace LivePeer::note_last_transaction with () in 7s build + 46s test
+MISSED   crates/rbitcoin-net/src/peers.rs:1399:12: delete ! in LivePeer::note_block_inflight in 7s build + 46s test
+MISSED   crates/rbitcoin-net/src/peers.rs:1408:28: replace != with == in LivePeer::clear_block_inflight in 6s build + 46s test
+MISSED   crates/rbitcoin-net/src/peers.rs:1507:9: replace LivePeer::age_inv_seen -> (u64, u64) with (0, 0) in 7s build + 46s test
+MISSED   crates/rbitcoin-net/src/peers.rs:1507:9: replace LivePeer::age_inv_seen -> (u64, u64) with (0, 1) in 6s build + 45s test
+MISSED   crates/rbitcoin-net/src/peers.rs:1507:9: replace LivePeer::age_inv_seen -> (u64, u64) with (1, 0) in 6s build + 46s test
+MISSED   crates/rbitcoin-net/src/peers.rs:1507:9: replace LivePeer::age_inv_seen -> (u64, u64) with (1, 1) in 6s build + 47s test
+MISSED   crates/rbitcoin-net/src/peers.rs:1610:27: replace && with || in LivePeer::block_download_owns in 4s build + 21s test
