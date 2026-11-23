@@ -1,14 +1,14 @@
 {
   "new_base": "6cf630f1d3433d1eae8bc5f3d5519c2a36f4d1b1",
   "new_skip": 3280,
-  "old_index": 13266,
-  "old_name": "crates/rbitcoin-net/src/seeds.rs:319:72: replace > with < in PeerFlags::apply_speed_sample",
+  "old_index": 13583,
+  "old_name": "crates/rbitcoin-net/src/tip_accept.rs:242:5: replace take_lane_exemption -> bool with false",
   "new_cap_used": true,
   "run_id": "45137236194",
   "new_len": 4304,
   "old_len": 32728,
   "new_remaining": 1024,
-  "old_remaining": 32488,
-  "completed_new": 367,
-  "completed_old": 240
+  "old_remaining": 32411,
+  "completed_new": 0,
+  "completed_old": 317
 }

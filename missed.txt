@@ -1617,3 +1617,48 @@ MISSED   crates/rbitcoin-net/src/seeds.rs:251:45: replace / with % in 5s build +
 MISSED   crates/rbitcoin-net/src/seeds.rs:300:9: replace PeerFlags::is_untried -> bool with true in 4s build + 25s test
 MISSED   crates/rbitcoin-net/src/seeds.rs:319:55: replace && with || in PeerFlags::apply_speed_sample in 4s build + 24s test
 MISSED   crates/rbitcoin-net/src/seeds.rs:319:31: replace < with <= in PeerFlags::apply_speed_sample in 4s build + 24s test
+# 45137236194 2 b86a1800e3117db21ef89e518bf66d647907f524
+MISSED   crates/rbitcoin-net/src/seeds.rs:319:72: replace > with >= in PeerFlags::apply_speed_sample in 113s build + 55s test
+MISSED   crates/rbitcoin-net/src/seeds.rs:320:55: replace || with && in PeerFlags::apply_speed_sample in 7s build + 55s test
+MISSED   crates/rbitcoin-net/src/seeds.rs:320:31: replace > with == in PeerFlags::apply_speed_sample in 7s build + 56s test
+MISSED   crates/rbitcoin-net/src/seeds.rs:320:31: replace > with >= in PeerFlags::apply_speed_sample in 7s build + 55s test
+MISSED   crates/rbitcoin-net/src/seeds.rs:320:72: replace < with == in PeerFlags::apply_speed_sample in 7s build + 55s test
+MISSED   crates/rbitcoin-net/src/seeds.rs:320:72: replace < with <= in PeerFlags::apply_speed_sample in 7s build + 56s test
+MISSED   crates/rbitcoin-net/src/seeds.rs:392:9: replace AddrMan::asmap -> Option<&AsMap> with None in 8s build + 55s test
+MISSED   crates/rbitcoin-net/src/seeds.rs:626:17: replace |= with &= in AddrMan::remember in 7s build + 56s test
+MISSED   crates/rbitcoin-net/src/seeds.rs:647:45: replace || with && in AddrMan::add_learned_addr in 8s build + 56s test
+MISSED   crates/rbitcoin-net/src/seeds.rs:808:42: replace && with || in AddrMan::is_dialable in 7s build + 56s test
+MISSED   crates/rbitcoin-net/src/seeds.rs:900:21: replace || with && in AddrMan::take_dial_candidates in 7s build + 56s test
+MISSED   crates/rbitcoin-net/src/seeds.rs:964:34: replace || with && in AddrMan::take_outbound_offset_occupied in 8s build + 55s test
+MISSED   crates/rbitcoin-net/src/seeds.rs:975:42: replace % with / in AddrMan::take_outbound_offset_occupied in 7s build + 56s test
+MISSED   crates/rbitcoin-net/src/seeds.rs:975:37: replace + with * in AddrMan::take_outbound_offset_occupied in 7s build + 56s test
+MISSED   crates/rbitcoin-net/src/seeds.rs:1066:23: replace && with || in AddrMan::load in 8s build + 56s test
+MISSED   crates/rbitcoin-net/src/seeds.rs:1066:12: delete ! in AddrMan::load in 7s build + 56s test
+MISSED   crates/rbitcoin-net/src/serve_perf.rs:54:58: replace / with % in format_serve_perf in 110s build + 56s test
+MISSED   crates/rbitcoin-net/src/serve_perf.rs:54:58: replace / with * in format_serve_perf in 7s build + 56s test
+MISSED   crates/rbitcoin-net/src/serve_perf.rs:55:27: replace / with % in format_serve_perf in 8s build + 56s test
+MISSED   crates/rbitcoin-net/src/serve_perf.rs:55:27: replace / with * in format_serve_perf in 7s build + 56s test
+MISSED   crates/rbitcoin-net/src/service.rs:308:9: replace P2PNode::user_agent -> &str with "" in 7s build + 56s test
+MISSED   crates/rbitcoin-net/src/service.rs:308:9: replace P2PNode::user_agent -> &str with "xyzzy" in 7s build + 55s test
+MISSED   crates/rbitcoin-net/src/service.rs:397:52: replace + with - in P2PNode::wait_height in 7s build + 55s test
+MISSED   crates/rbitcoin-net/src/service.rs:408:44: replace >= with < in P2PNode::wait_height in 7s build + 56s test
+MISSED   crates/rbitcoin-net/src/service.rs:471:9: replace <impl Drop for P2PNode>::drop with () in 22s build + 56s test
+MISSED   crates/rbitcoin-net/src/service.rs:496:22: delete ! in push_session_task in 22s build + 56s test
+MISSED   crates/rbitcoin-net/src/service.rs:548:32: delete ! in spawn_inbound_accept in 8s build + 54s test
+MISSED   crates/rbitcoin-net/src/service.rs:561:33: delete match arm Ok(Ok(p)) in spawn_inbound_accept in 9s build + 55s test
+MISSED   crates/rbitcoin-net/src/service.rs:644:5: replace default_user_agent -> String with "xyzzy".into() in 7s build + 55s test
+MISSED   crates/rbitcoin-net/src/socks.rs:334:28: replace || with && in greet in 9s build + 55s test
+MISSED   crates/rbitcoin-net/src/socks.rs:343:17: replace || with && in greet in 8s build + 55s test
+MISSED   crates/rbitcoin-net/src/socks.rs:342:17: replace || with && in greet in 8s build + 56s test
+MISSED   crates/rbitcoin-net/src/socks.rs:341:37: replace > with == in greet in 8s build + 55s test
+MISSED   crates/rbitcoin-net/src/socks.rs:341:37: replace > with >= in greet in 8s build + 56s test
+MISSED   crates/rbitcoin-net/src/socks.rs:343:37: replace > with == in greet in 8s build + 56s test
+MISSED   crates/rbitcoin-net/src/socks.rs:343:37: replace > with >= in greet in 8s build + 55s test
+MISSED   crates/rbitcoin-net/src/socks.rs:350:28: replace || with && in greet in 8s build + 54s test
+MISSED   crates/rbitcoin-net/src/socks.rs:362:27: replace || with && in greet in 8s build + 55s test
+MISSED   crates/rbitcoin-net/src/socks.rs:386:33: replace || with && in write_connect in 7s build + 56s test
+MISSED   crates/rbitcoin-net/src/socks.rs:386:48: replace > with == in write_connect in 8s build + 55s test
+MISSED   crates/rbitcoin-net/src/socks.rs:386:48: replace > with >= in write_connect in 8s build + 56s test
+MISSED   crates/rbitcoin-net/src/socks.rs:413:9: delete match arm 4 in read_connect_reply in 8s build + 55s test
+MISSED   crates/rbitcoin-net/src/socks.rs:417:9: delete match arm 3 in read_connect_reply in 8s build + 56s test
+MISSED   crates/rbitcoin-net/src/tip_accept.rs:220:5: replace lane_test_gate_enabled -> bool with true in 6s build + 29s test
