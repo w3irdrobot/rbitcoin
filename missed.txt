@@ -1549,3 +1549,71 @@ MISSED   crates/rbitcoin-net/src/peers.rs:3838:9: replace PeerHub::trust_peer_la
 MISSED   crates/rbitcoin-net/src/peers.rs:3838:9: replace PeerHub::trust_peer_label -> Option<String> with Some("xyzzy".into()) in 5s build + 28s test
 MISSED   crates/rbitcoin-net/src/peers.rs:3895:30: replace && with || in PeerHub::note_default_port in 4s build + 30s test
 MISSED   crates/rbitcoin-net/src/peers.rs:4158:9: replace PeerHub::redial_remembered_off_runtime with () in 11s build + 30s test
+# 45137236194 1 b86a1800e3117db21ef89e518bf66d647907f524
+MISSED   crates/rbitcoin-store/src/block_queue.rs:169:19: replace < with <= in HeightWindow::insert in 11s build + 81s test
+MISSED   crates/rbitcoin-store/src/block_queue.rs:179:14: replace < with <= in HeightWindow::insert in 11s build + 81s test
+MISSED   crates/rbitcoin-store/src/block_queue.rs:221:26: replace < with <= in HeightWindow::trim in 11s build + 80s test
+MISSED   crates/rbitcoin-store/src/block_queue.rs:224:32: replace > with >= in HeightWindow::trim in 10s build + 80s test
+MISSED   crates/rbitcoin-store/src/block_queue.rs:228:37: replace - with + in HeightWindow::trim in 11s build + 80s test
+MISSED   crates/rbitcoin-store/src/block_queue.rs:229:27: replace && with || in HeightWindow::trim in 11s build + 80s test
+MISSED   crates/rbitcoin-store/src/block_queue.rs:229:23: replace > with == in HeightWindow::trim in 10s build + 80s test
+MISSED   crates/rbitcoin-store/src/block_queue.rs:229:41: replace >= with < in HeightWindow::trim in 10s build + 80s test
+MISSED   crates/rbitcoin-store/src/block_queue.rs:245:26: replace && with || in HeightWindow::ids_in_span in 11s build + 80s test
+MISSED   crates/rbitcoin-store/src/block_queue.rs:245:58: replace < with <= in HeightWindow::ids_in_span in 11s build + 81s test
+MISSED   crates/rbitcoin-store/src/block_queue.rs:250:64: replace - with + in HeightWindow::ids_in_span in 10s build + 80s test
+MISSED   crates/rbitcoin-store/src/block_queue.rs:250:64: replace - with / in HeightWindow::ids_in_span in 11s build + 80s test
+MISSED   crates/rbitcoin-store/src/block_queue.rs:256:22: replace < with == in HeightWindow::ids_in_span in 10s build + 81s test
+MISSED   crates/rbitcoin-store/src/block_queue.rs:256:22: replace < with <= in HeightWindow::ids_in_span in 11s build + 81s test
+MISSED   crates/rbitcoin-store/src/block_queue.rs:259:37: replace < with <= in HeightWindow::ids_in_span in 11s build + 81s test
+MISSED   crates/rbitcoin-store/src/block_queue.rs:323:21: delete match arm 0 in QueuedHeights::without in 10s build + 81s test
+MISSED   crates/rbitcoin-store/src/block_queue.rs:428:15: replace < with == in IdWindow::insert in 11s build + 80s test
+MISSED   crates/rbitcoin-store/src/block_queue.rs:428:15: replace < with <= in IdWindow::insert in 11s build + 80s test
+MISSED   crates/rbitcoin-store/src/block_queue.rs:429:49: replace - with + in IdWindow::insert in 10s build + 80s test
+MISSED   crates/rbitcoin-store/src/block_queue.rs:429:49: replace - with / in IdWindow::insert in 11s build + 81s test
+MISSED   crates/rbitcoin-store/src/block_queue.rs:434:23: replace += with -= in IdWindow::insert in 11s build + 81s test
+MISSED   crates/rbitcoin-store/src/block_queue.rs:434:23: replace += with *= in IdWindow::insert in 11s build + 80s test
+MISSED   crates/rbitcoin-store/src/block_queue.rs:490:26: replace < with <= in IdWindow::trim in 11s build + 80s test
+MISSED   crates/rbitcoin-store/src/block_queue.rs:493:32: replace > with == in IdWindow::trim in 119s build + 81s test
+MISSED   crates/rbitcoin-store/src/block_queue.rs:493:32: replace > with < in IdWindow::trim in 11s build + 80s test
+MISSED   crates/rbitcoin-store/src/block_queue.rs:493:32: replace > with >= in IdWindow::trim in 11s build + 81s test
+MISSED   crates/rbitcoin-store/src/block_queue.rs:498:27: replace && with || in IdWindow::trim in 11s build + 81s test
+MISSED   crates/rbitcoin-store/src/delta_loc.rs:374:35: replace != with == in DeltaLoc::truncate_to_zero_header_first in 11s build + 81s test
+MISSED   crates/rbitcoin-store/src/file.rs:134:17: replace != with == in write_tmp_synced in 124s build + 81s test
+MISSED   crates/rbitcoin-store/src/file.rs:230:21: replace - with + in fail_dir_sync in 16s build + 80s test
+MISSED   crates/rbitcoin-store/src/file.rs:230:21: replace - with / in fail_dir_sync in 11s build + 80s test
+MISSED   crates/rbitcoin-store/src/file.rs:1161:70: replace < with == in TableFile::grow_to_at_least in 10s build + 80s test
+MISSED   crates/rbitcoin-store/src/file.rs:1161:70: replace < with > in TableFile::grow_to_at_least in 11s build + 81s test
+MISSED   crates/rbitcoin-store/src/file.rs:1161:70: replace < with <= in TableFile::grow_to_at_least in 12s build + 81s test
+MISSED   crates/rbitcoin-store/src/index_build_uring.rs:620:26: replace match guard want_txids with true in read_witnesses_and_parent_locs in 119s build + 80s test
+MISSED   crates/rbitcoin-store/src/io_handle.rs:206:63: replace == with != in injected_fallocate_fault in 118s build + 80s test
+MISSED   crates/rbitcoin-store/src/io_handle.rs:206:79: replace > with == in injected_fallocate_fault in 12s build + 80s test
+MISSED   crates/rbitcoin-store/src/io_handle.rs:215:51: replace > with >= in injected_fallocate_fault in 11s build + 81s test
+MISSED   crates/rbitcoin-store/src/io_handle.rs:264:29: replace != with == in disarm_pwrite in 12s build + 81s test
+MISSED   crates/rbitcoin-store/src/io_handle.rs:351:5: replace arm_hide_after_pread with () in 10s build + 80s test
+MISSED   crates/rbitcoin-store/src/io_handle.rs:359:5: replace disarm_hide_after_pread with () in 11s build + 80s test
+MISSED   crates/rbitcoin-store/src/io_handle.rs:366:5: replace note_test_pread with () in 11s build + 80s test
+MISSED   crates/rbitcoin-store/src/io_handle.rs:372:5: replace hidden_after_pread -> bool with false in 11s build + 80s test
+MISSED   crates/rbitcoin-net/src/peers.rs:4193:25: replace < with <= in PeerHub::maybe_select_hb in 107s build + 50s test
+MISSED   crates/rbitcoin-net/src/peers.rs:4325:9: replace PeerHub::live_outbound_full_relay_addrs -> Vec<SocketAddr> with vec![] in 19s build + 49s test
+MISSED   crates/rbitcoin-net/src/peers.rs:4336:72: replace && with || in PeerHub::live_outbound_full_relay_nets in 8s build + 50s test
+MISSED   crates/rbitcoin-net/src/peers.rs:4497:55: replace && with || in ensure_host_port in 8s build + 49s test
+MISSED   crates/rbitcoin-net/src/peers.rs:4497:29: replace && with || in ensure_host_port in 7s build + 50s test
+MISSED   crates/rbitcoin-net/src/peers.rs:4502:24: replace || with && in ensure_host_port in 7s build + 49s test
+MISSED   crates/rbitcoin-net/src/reactor.rs:36:9: replace <impl Drop for BlockingRegion>::drop with () in 108s build + 50s test
+MISSED   crates/rbitcoin-net/src/reactor.rs:57:5: replace on_off_pool_thread -> bool with false in 7s build + 50s test
+MISSED   crates/rbitcoin-net/src/reactor.rs:215:9: replace <impl Drop for StorePermitGuard>::drop with () in 10s build + 49s test
+MISSED   crates/rbitcoin-net/src/reactor.rs:294:9: replace off_pool_lane::off_pool_threads -> usize with 0 in 7s build + 49s test
+MISSED   crates/rbitcoin-net/src/reactor.rs:294:9: replace off_pool_lane::off_pool_threads -> usize with 1 in 6s build + 49s test
+MISSED   crates/rbitcoin-net/src/reactor.rs:300:28: replace == with != in off_pool_lane::off_pool_threads in 7s build + 49s test
+MISSED   crates/rbitcoin-net/src/reactor.rs:301:19: replace += with -= in off_pool_lane::off_pool_threads in 6s build + 49s test
+MISSED   crates/rbitcoin-net/src/reactor.rs:301:19: replace += with *= in off_pool_lane::off_pool_threads in 6s build + 49s test
+MISSED   crates/rbitcoin-net/src/seeds.rs:30:66: replace * with + in 4s build + 25s test
+MISSED   crates/rbitcoin-net/src/seeds.rs:43:51: replace | with ^ in required_seed_services in 4s build + 24s test
+MISSED   crates/rbitcoin-net/src/seeds.rs:43:27: replace | with ^ in required_seed_services in 4s build + 25s test
+MISSED   crates/rbitcoin-net/src/seeds.rs:206:16: delete ! in resolve_dns_seeds in 5s build + 25s test
+MISSED   crates/rbitcoin-net/src/seeds.rs:238:37: replace << with >> in 5s build + 25s test
+MISSED   crates/rbitcoin-net/src/seeds.rs:247:46: replace / with * in 4s build + 24s test
+MISSED   crates/rbitcoin-net/src/seeds.rs:251:45: replace / with % in 5s build + 24s test
+MISSED   crates/rbitcoin-net/src/seeds.rs:300:9: replace PeerFlags::is_untried -> bool with true in 4s build + 25s test
+MISSED   crates/rbitcoin-net/src/seeds.rs:319:55: replace && with || in PeerFlags::apply_speed_sample in 4s build + 24s test
+MISSED   crates/rbitcoin-net/src/seeds.rs:319:31: replace < with <= in PeerFlags::apply_speed_sample in 4s build + 24s test
