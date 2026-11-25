@@ -1662,3 +1662,67 @@ MISSED   crates/rbitcoin-net/src/socks.rs:386:48: replace > with >= in write_con
 MISSED   crates/rbitcoin-net/src/socks.rs:413:9: delete match arm 4 in read_connect_reply in 8s build + 55s test
 MISSED   crates/rbitcoin-net/src/socks.rs:417:9: delete match arm 3 in read_connect_reply in 8s build + 56s test
 MISSED   crates/rbitcoin-net/src/tip_accept.rs:220:5: replace lane_test_gate_enabled -> bool with true in 6s build + 29s test
+# 45582908106 1 b86a1800e3117db21ef89e518bf66d647907f524
+MISSED   crates/rbitcoin-store/src/scripthash.rs:371:28: replace == with != in read_shsr_magic in 82s build + 72s test
+MISSED   crates/rbitcoin-store/src/scripthash.rs:377:24: replace && with || in six_digit_name in 13s build + 72s test
+MISSED   crates/rbitcoin-store/src/scripthash.rs:389:28: replace == with != in next_sealed_ovf_id in 13s build + 72s test
+MISSED   crates/rbitcoin-store/src/scripthash_mphf.rs:42:8: replace ^ with | in mix_key16 in 84s build + 72s test
+MISSED   crates/rbitcoin-store/src/spend_page_log.rs:37:44: replace * with + in 83s build + 69s test
+MISSED   crates/rbitcoin-store/src/spend_page_log.rs:37:44: replace * with / in 8s build + 69s test
+MISSED   crates/rbitcoin-store/src/spend_page_log.rs:37:37: replace * with + in 8s build + 69s test
+MISSED   crates/rbitcoin-store/src/spend_page_log.rs:37:37: replace * with / in 9s build + 69s test
+MISSED   crates/rbitcoin-store/src/spend_page_log.rs:62:44: replace * with + in presence_from in 9s build + 69s test
+MISSED   crates/rbitcoin-store/src/spend_page_log.rs:62:44: replace * with / in presence_from in 9s build + 70s test
+MISSED   crates/rbitcoin-store/src/spend_page_log.rs:420:9: replace SpendPageLog::checkpoint_early -> bool with true in 9s build + 70s test
+MISSED   crates/rbitcoin-store/src/spend_page_log.rs:428:9: replace SpendPageLog::relax_pace with () in 9s build + 69s test
+MISSED   crates/rbitcoin-store/src/spend_page_log.rs:526:25: replace - with + in SpendPageLog::covers in 8s build + 69s test
+MISSED   crates/rbitcoin-store/src/spend_page_log.rs:565:37: replace + with * in SpendPageLog::slots_at in 9s build + 70s test
+MISSED   crates/rbitcoin-store/src/spend_page_log.rs:566:27: replace < with > in SpendPageLog::slots_at in 9s build + 70s test
+MISSED   crates/rbitcoin-store/src/spend_page_log.rs:589:33: replace + with * in SpendPageLog::slots_at in 8s build + 70s test
+MISSED   crates/rbitcoin-store/src/spend_page_log.rs:590:23: replace < with > in SpendPageLog::slots_at in 9s build + 70s test
+MISSED   crates/rbitcoin-store/src/spend_page_log.rs:591:46: replace == with != in SpendPageLog::slots_at in 8s build + 70s test
+MISSED   crates/rbitcoin-store/src/spend_page_log.rs:592:43: replace == with != in SpendPageLog::slots_at in 9s build + 69s test
+MISSED   crates/rbitcoin-store/src/spend_page_log.rs:594:21: replace += with *= in SpendPageLog::slots_at in 2s build + 4s test
+MISSED   crates/rbitcoin-store/src/spend_page_log.rs:615:63: replace / with * in SpendPageLog::note_slots in 12s build + 83s test
+MISSED   crates/rbitcoin-store/src/spend_page_log.rs:635:27: replace && with || in SpendPageLog::note_slots in 11s build + 85s test
+MISSED   crates/rbitcoin-store/src/spend_page_log.rs:696:50: replace || with && in SpendPageLog::above_tip in 12s build + 85s test
+MISSED   crates/rbitcoin-store/src/spend_page_log.rs:696:43: replace > with == in SpendPageLog::above_tip in 11s build + 84s test
+MISSED   crates/rbitcoin-store/src/spend_page_log.rs:696:43: replace > with >= in SpendPageLog::above_tip in 107s build + 84s test
+MISSED   crates/rbitcoin-store/src/spend_page_log.rs:696:84: replace > with == in SpendPageLog::above_tip in 11s build + 86s test
+MISSED   crates/rbitcoin-store/src/spend_page_log.rs:696:84: replace > with >= in SpendPageLog::above_tip in 11s build + 86s test
+MISSED   crates/rbitcoin-store/src/spend_page_log.rs:706:54: replace || with && in SpendPageLog::widen_cool_through in 11s build + 87s test
+MISSED   crates/rbitcoin-store/src/spend_page_log.rs:706:24: replace || with && in SpendPageLog::widen_cool_through in 12s build + 87s test
+MISSED   crates/rbitcoin-store/src/spend_page_log.rs:709:25: replace > with >= in SpendPageLog::widen_cool_through in 11s build + 84s test
+MISSED   crates/rbitcoin-store/src/spend_page_log.rs:725:63: replace > with >= in SpendPageLog::hold_fold_above in 12s build + 85s test
+MISSED   crates/rbitcoin-store/src/spend_page_log.rs:727:17: replace || with && in SpendPageLog::hold_fold_above in 11s build + 86s test
+MISSED   crates/rbitcoin-store/src/spend_page_log.rs:726:64: replace > with == in SpendPageLog::hold_fold_above in 12s build + 87s test
+MISSED   crates/rbitcoin-store/src/spend_page_log.rs:726:64: replace > with < in SpendPageLog::hold_fold_above in 12s build + 87s test
+MISSED   crates/rbitcoin-store/src/spend_page_log.rs:726:64: replace > with >= in SpendPageLog::hold_fold_above in 11s build + 85s test
+MISSED   crates/rbitcoin-store/src/spend_page_log.rs:727:64: replace > with == in SpendPageLog::hold_fold_above in 12s build + 86s test
+MISSED   crates/rbitcoin-store/src/spend_page_log.rs:727:64: replace > with < in SpendPageLog::hold_fold_above in 12s build + 84s test
+MISSED   crates/rbitcoin-store/src/spend_page_log.rs:727:64: replace > with >= in SpendPageLog::hold_fold_above in 11s build + 84s test
+MISSED   crates/rbitcoin-store/src/spend_page_log.rs:728:57: replace > with >= in SpendPageLog::hold_fold_above in 11s build + 87s test
+MISSED   crates/rbitcoin-store/src/spend_page_log.rs:743:22: replace < with <= in SpendPageLog::hold_fold_above in 12s build + 85s test
+MISSED   crates/rbitcoin-store/src/spend_page_log.rs:947:44: replace < with <= in SpendPageLog::prepare_commit_in in 12s build + 85s test
+MISSED   crates/rbitcoin-store/src/spend_page_log.rs:1001:40: replace < with <= in SpendPageLog::settle_deferred_clear in 11s build + 85s test
+MISSED   crates/rbitcoin-store/src/spend_page_log.rs:1034:35: replace && with || in SpendPageLog::publish_hold in 11s build + 85s test
+MISSED   crates/rbitcoin-store/src/spend_page_log.rs:1181:27: replace && with || in SpendPageLog::install_commit in 11s build + 86s test
+MISSED   crates/rbitcoin-store/src/spend_page_log.rs:1303:33: replace / with * in SpendPageLog::explode_held in 11s build + 87s test
+MISSED   crates/rbitcoin-store/src/spend_page_log.rs:1456:16: delete ! in SpendPageLog::store_pending in 12s build + 85s test
+MISSED   crates/rbitcoin-store/src/spend_page_log.rs:1467:27: delete ! in SpendPageLog::store_pending in 11s build + 86s test
+MISSED   crates/rbitcoin-store/src/spend_page_log.rs:1656:9: replace SpendPageLog::remove_page_sidecars with () in 17s build + 88s test
+MISSED   crates/rbitcoin-store/src/spend_page_log.rs:1725:21: replace || with && in SpendPageLog::copy_cooled in 17s build + 88s test
+MISSED   crates/rbitcoin-store/src/spend_page_log.rs:1766:42: replace || with && in SpendPageLog::finish_cooled in 12s build + 87s test
+MISSED   crates/rbitcoin-store/src/spend_page_log.rs:1778:13: replace && with || in SpendPageLog::finish_cooled in 12s build + 89s test
+MISSED   crates/rbitcoin-store/src/spend_page_log.rs:1814:28: replace > with == in SpendPageLog::reload in 12s build + 85s test
+MISSED   crates/rbitcoin-store/src/spend_page_log.rs:1814:28: replace > with >= in SpendPageLog::reload in 12s build + 85s test
+MISSED   crates/rbitcoin-store/src/spend_page_log.rs:1857:30: replace > with >= in SpendPageLog::reload in 12s build + 85s test
+MISSED   crates/rbitcoin-store/src/spend_page_log.rs:1922:82: replace && with || in open_committed_pages in 11s build + 84s test
+MISSED   crates/rbitcoin-store/src/spend_page_log.rs:1956:32: delete ! in <impl Drop for ReleaseLater<'_>>::drop in 12s build + 84s test
+MISSED   crates/rbitcoin-store/src/spend_page_log.rs:1987:12: delete ! in fold_open_into_snapshot in 11s build + 85s test
+MISSED   crates/rbitcoin-net/src/tip_accept.rs:280:22: delete ! in lane_send_guard in 96s build + 52s test
+MISSED   crates/rbitcoin-net/src/tip_accept.rs:322:5: replace lane_exclusive_notify -> &'static tokio::sync::Notify with Box::leak(Box::new(Default::default())) in 9s build + 51s test
+MISSED   crates/rbitcoin-net/src/tip_accept.rs:556:10: replace == with != in release_lane_hold in 8s build + 51s test
+MISSED   crates/rbitcoin-net/src/tip_accept.rs:704:47: replace || with && in wait_park_gate in 8s build + 51s test
+MISSED   crates/rbitcoin-net/src/tip_accept.rs:709:43: replace || with && in wait_park_gate in 8s build + 51s test
+MISSED   crates/rbitcoin-net/src/tip_accept.rs:714:47: replace || with && in wait_park_gate in 8s build + 51s test

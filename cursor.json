@@ -1,14 +1,14 @@
 {
   "new_base": "6cf630f1d3433d1eae8bc5f3d5519c2a36f4d1b1",
-  "new_skip": 3280,
-  "old_index": 13583,
-  "old_name": "crates/rbitcoin-net/src/tip_accept.rs:242:5: replace take_lane_exemption -> bool with false",
-  "new_cap_used": false,
-  "run_id": "45374769240",
+  "new_skip": 3755,
+  "old_index": 13671,
+  "old_name": "crates/rbitcoin-net/src/tx_relay.rs:52:5: replace arm_template_prev_sample -> TemplatePrevSample with Default::default()",
+  "new_cap_used": true,
+  "run_id": "45582908106",
   "new_len": 4304,
   "old_len": 32728,
-  "new_remaining": 1024,
-  "old_remaining": 32411,
-  "completed_new": 0,
-  "completed_old": 317
+  "new_remaining": 549,
+  "old_remaining": 32640,
+  "completed_new": 475,
+  "completed_old": 88
 }
