@@ -1856,3 +1856,112 @@ MISSED   crates/rbitcoin-net/src/v2.rs:672:22: replace > with == in framed_paylo
 MISSED   crates/rbitcoin-net/src/v2.rs:672:22: replace > with >= in framed_payload in 5s build + 44s test
 MISSED   crates/rbitcoin-net/src/v2.rs:858:24: replace && with || in bip324_halves in 5s build + 44s test
 MISSED   crates/rbitcoin-net/src/versionbits_warn.rs:91:42: replace || with && in UnknownBitsScan::advance in 79s build + 44s test
+# 45970872855 1 b86a1800e3117db21ef89e518bf66d647907f524
+MISSED   crates/rbitcoin-store/src/tx_head_mphf.rs:202:23: replace < with > in read_mlt in 87s build + 72s test
+MISSED   crates/rbitcoin-store/src/tx_table/mod.rs:784:41: replace || with && in class_a_skew_target_count in 80s build + 70s test
+MISSED   crates/rbitcoin-store/src/tx_table/mod.rs:857:30: replace || with && in pruned_uncovered_input_floor in 8s build + 69s test
+MISSED   crates/rbitcoin-store/src/tx_table/mod.rs:861:18: replace || with && in pruned_uncovered_input_floor in 8s build + 69s test
+MISSED   crates/rbitcoin-store/src/tx_table/mod.rs:1144:5: replace spend_meta_read_counts -> (u64, u64) with (1, 1) in 10s build + 70s test
+MISSED   crates/rbitcoin-store/src/tx_table/mod.rs:1297:49: replace && with || in TxTable::open_seqsigwit in 10s build + 69s test
+MISSED   crates/rbitcoin-store/src/tx_table/mod.rs:1297:74: replace < with <= in TxTable::open_seqsigwit in 9s build + 70s test
+MISSED   crates/rbitcoin-store/src/tx_table/mod.rs:1593:9: replace TxTable::seqsigwit_stem_retired -> bool with false in 9s build + 70s test
+MISSED   crates/rbitcoin-store/src/tx_table/mod.rs:1593:37: replace && with || in TxTable::seqsigwit_stem_retired in 9s build + 70s test
+MISSED   crates/rbitcoin-store/src/tx_table/mod.rs:1593:67: replace < with == in TxTable::seqsigwit_stem_retired in 9s build + 69s test
+MISSED   crates/rbitcoin-store/src/tx_table/mod.rs:1593:67: replace < with > in TxTable::seqsigwit_stem_retired in 9s build + 70s test
+MISSED   crates/rbitcoin-store/src/tx_table/mod.rs:1619:43: replace || with && in TxTable::seqsigwit_stem_needs_release in 12s build + 71s test
+MISSED   crates/rbitcoin-store/src/tx_table/mod.rs:1619:80: replace > with < in TxTable::seqsigwit_stem_needs_release in 10s build + 70s test
+MISSED   crates/rbitcoin-store/src/tx_table/mod.rs:1626:13: replace > with == in TxTable::seqsigwit_stem_needs_release in 9s build + 69s test
+MISSED   crates/rbitcoin-store/src/tx_table/mod.rs:1626:13: replace > with >= in TxTable::seqsigwit_stem_needs_release in 9s build + 69s test
+MISSED   crates/rbitcoin-store/src/tx_table/mod.rs:1643:41: replace == with != in TxTable::seqsigwit_inputs_from_stem in 8s build + 69s test
+MISSED   crates/rbitcoin-store/src/tx_table/mod.rs:2521:53: replace && with || in TxTable::body_slot_matches in 10s build + 69s test
+MISSED   crates/rbitcoin-store/src/tx_table/mod.rs:2521:31: replace && with || in TxTable::body_slot_matches in 8s build + 70s test
+MISSED   crates/rbitcoin-store/src/tx_table/mod.rs:2673:9: replace TxTable::spend_checkpoint_early -> bool with true in 8s build + 71s test
+MISSED   crates/rbitcoin-store/src/tx_table/mod.rs:2677:9: replace TxTable::relax_spend_pace with () in 9s build + 69s test
+MISSED   crates/rbitcoin-store/src/tx_table/mod.rs:2751:41: replace || with && in TxTable::store_spend_slot_at in 8s build + 69s test
+MISSED   crates/rbitcoin-store/src/tx_table/mod.rs:3085:35: replace || with && in TxTable::output_value_sums_in_fk_span in 10s build + 70s test
+MISSED   crates/rbitcoin-store/src/tx_table/mod.rs:3085:24: replace != with == in TxTable::output_value_sums_in_fk_span in 9s build + 71s test
+MISSED   crates/rbitcoin-store/src/tx_table/mod.rs:3085:90: replace > with == in TxTable::output_value_sums_in_fk_span in 9s build + 70s test
+MISSED   crates/rbitcoin-store/src/tx_table/mod.rs:3085:90: replace > with < in TxTable::output_value_sums_in_fk_span in 9s build + 70s test
+MISSED   crates/rbitcoin-store/src/tx_table/mod.rs:3085:90: replace > with >= in TxTable::output_value_sums_in_fk_span in 9s build + 69s test
+MISSED   crates/rbitcoin-store/src/tx_table/mod.rs:3090:19: replace += with *= in TxTable::output_value_sums_in_fk_span in 10s build + 69s test
+MISSED   crates/rbitcoin-store/src/tx_table/mod.rs:3374:30: replace || with && in TxTable::append_stems_one_wave in 9s build + 69s test
+MISSED   crates/rbitcoin-store/src/var_table.rs:62:21: replace || with && in exact_body_starts in 76s build + 69s test
+MISSED   crates/rbitcoin-store/src/var_table.rs:494:19: replace < with > in VarTable::prepare_exact_body in 9s build + 69s test
+MISSED   crates/rbitcoin-store/src/tx_table/packed.rs:891:12: delete ! in SpentBodyImage::from_pairs in 77s build + 70s test
+MISSED   crates/rbitcoin-net/src/header_report.rs:125:34: replace match guard Some(old) == p.anchors.last().map(|a| a.1) with true in ChainHub::publish_ibd_header_tip in 70s build + 44s test
+MISSED   crates/rbitcoin-net/src/header_report.rs:126:27: replace <= with > in ChainHub::publish_ibd_header_tip in 5s build + 44s test
+MISSED   crates/rbitcoin-net/src/header_report.rs:219:13: delete match arm (None, other) in ChainHub::refresh_header_report in 9s build + 44s test
+MISSED   crates/rbitcoin-net/src/header_report.rs:303:29: replace == with != in ChainHub::note_header_tip in 6s build + 59s test
+MISSED   crates/rbitcoin-net/src/header_report.rs:313:12: delete ! in ChainHub::note_header_tip in 6s build + 46s test
+MISSED   crates/rbitcoin-net/src/header_report.rs:335:25: replace != with == in ChainHub::refresh_stored_header_tip in 6s build + 45s test
+MISSED   crates/rbitcoin-net/src/header_report.rs:387:25: replace != with == in ChainHub::stored_header_prefix in 6s build + 44s test
+MISSED   crates/rbitcoin-net/src/header_report.rs:407:21: replace <= with > in ChainHub::stored_hash_at in 5s build + 44s test
+MISSED   crates/rbitcoin-net/src/header_report.rs:439:31: replace != with == in ChainHub::check_ibd_header_proof in 5s build + 44s test
+MISSED   crates/rbitcoin-net/src/parent_req.rs:249:73: replace && with || in ParentTracker::schedule in 68s build + 44s test
+MISSED   crates/rbitcoin-net/src/parent_req.rs:287:57: replace && with || in ParentTracker::rearm_existing in 6s build + 45s test
+MISSED   crates/rbitcoin-net/src/parent_req.rs:287:39: replace && with || in ParentTracker::rearm_existing in 5s build + 44s test
+MISSED   crates/rbitcoin-net/src/parent_req.rs:287:30: replace == with != in ParentTracker::rearm_existing in 5s build + 44s test
+MISSED   crates/rbitcoin-net/src/parent_req.rs:287:49: replace != with == in ParentTracker::rearm_existing in 5s build + 45s test
+MISSED   crates/rbitcoin-net/src/parent_req.rs:289:82: replace || with && in ParentTracker::rearm_existing in 5s build + 44s test
+MISSED   crates/rbitcoin-net/src/parent_req.rs:461:41: delete ! in ParentTracker::select in 5s build + 45s test
+MISSED   crates/rbitcoin-net/src/parent_req.rs:461:64: replace <= with > in ParentTracker::select in 5s build + 44s test
+MISSED   crates/rbitcoin-net/src/parent_req.rs:547:33: delete ! in ParentTracker::slot_all_failed in 6s build + 45s test
+MISSED   crates/rbitcoin-net/src/parent_req.rs:613:19: replace == with != in ParentTracker::note_removed_ann in 6s build + 44s test
+MISSED   crates/rbitcoin-net/src/parent_req.rs:621:69: replace == with != in ParentTracker::note_removed_ann in 5s build + 45s test
+MISSED   crates/rbitcoin-net/src/parent_req.rs:622:16: delete ! in ParentTracker::note_removed_ann in 6s build + 44s test
+MISSED   crates/rbitcoin-node/src/cli.rs:155:28: replace && with || in apply_operator_kvs in 112s build + 20s test
+MISSED   crates/rbitcoin-node/src/cli.rs:155:16: replace == with != in apply_operator_kvs in 3s build + 21s test
+MISSED   crates/rbitcoin-node/src/cli.rs:155:31: delete ! in apply_operator_kvs in 4s build + 20s test
+MISSED   crates/rbitcoin-node/src/cli.rs:160:31: replace && with || in apply_operator_kvs in 4s build + 20s test
+MISSED   crates/rbitcoin-node/src/cli.rs:160:16: replace == with != in apply_operator_kvs in 3s build + 20s test
+MISSED   crates/rbitcoin-node/src/cli.rs:160:34: delete ! in apply_operator_kvs in 4s build + 20s test
+MISSED   crates/rbitcoin-node/src/cli.rs:165:29: replace && with || in apply_operator_kvs in 4s build + 20s test
+MISSED   crates/rbitcoin-node/src/cli.rs:165:16: replace == with != in apply_operator_kvs in 4s build + 20s test
+MISSED   crates/rbitcoin-node/src/cli.rs:165:32: delete ! in apply_operator_kvs in 4s build + 21s test
+MISSED   crates/rbitcoin-node/src/cli.rs:170:31: replace && with || in apply_operator_kvs in 5s build + 20s test
+MISSED   crates/rbitcoin-node/src/cli.rs:170:16: replace == with != in apply_operator_kvs in 4s build + 20s test
+MISSED   crates/rbitcoin-node/src/cli.rs:170:34: delete ! in apply_operator_kvs in 5s build + 20s test
+MISSED   crates/rbitcoin-node/src/cli.rs:174:16: replace == with != in apply_operator_kvs in 3s build + 20s test
+MISSED   crates/rbitcoin-node/src/cli.rs:177:16: delete ! in apply_operator_kvs in 4s build + 20s test
+MISSED   crates/rbitcoin-node/src/cli.rs:269:23: delete ! in cli_main in 4s build + 20s test
+MISSED   crates/rbitcoin-node/src/cli.rs:284:13: replace > with == in cli_main in 4s build + 20s test
+MISSED   crates/rbitcoin-node/src/cli.rs:571:77: replace || with && in parse_cli_flag in 4s build + 21s test
+MISSED   crates/rbitcoin-node/src/cli.rs:571:60: replace || with && in parse_cli_flag in 4s build + 20s test
+MISSED   crates/rbitcoin-node/src/cli.rs:571:40: replace || with && in parse_cli_flag in 4s build + 20s test
+MISSED   crates/rbitcoin-node/src/cli.rs:571:23: replace || with && in parse_cli_flag in 4s build + 20s test
+MISSED   crates/rbitcoin-node/src/cli.rs:614:9: delete match arm crate::error::NodeError::FutureTip | crate::error::NodeError::Init(_) in print_run_err in 4s build + 21s test
+MISSED   crates/rbitcoin-node/src/cli.rs:615:9: delete match arm crate::error::NodeError::Locked(_) in print_run_err in 4s build + 21s test
+MISSED   crates/rbitcoin-node/src/config.rs:51:19: replace > with == in parse_btc_to_sat in 111s build + 21s test
+MISSED   crates/rbitcoin-node/src/config.rs:51:19: replace > with < in parse_btc_to_sat in 4s build + 21s test
+MISSED   crates/rbitcoin-node/src/config.rs:51:19: replace > with >= in parse_btc_to_sat in 4s build + 20s test
+MISSED   crates/rbitcoin-node/src/config.rs:365:9: replace NodeEnv::from_env -> Result<Self, NodeError> with Ok(Default::default()) in 6s build + 21s test
+MISSED   crates/rbitcoin-node/src/config.rs:701:9: replace NodeConfig::subversion -> Result<String, crate::error::NodeError> with Ok(String::new()) in 7s build + 20s test
+MISSED   crates/rbitcoin-node/src/config.rs:701:9: replace NodeConfig::subversion -> Result<String, crate::error::NodeError> with Ok("xyzzy".into()) in 4s build + 20s test
+MISSED   crates/rbitcoin-node/src/config.rs:813:91: replace * with + in NodeConfig::chain_params in 5s build + 20s test
+MISSED   crates/rbitcoin-node/src/config.rs:886:58: delete ! in NodeConfig::validate in 4s build + 20s test
+MISSED   crates/rbitcoin-node/src/config.rs:1028:20: replace match guard !self.listen.connect.is_empty() || self.listen.connect_dns.len() > 1 || self .listen .connect_dns .iter() .any(|h| !h.eq_ignore_ascii_case(host)) with false in NodeConfig::connect_matches_trust_peer in 4s build + 20s test
+MISSED   crates/rbitcoin-node/src/config.rs:1030:21: replace || with && in NodeConfig::connect_matches_trust_peer in 4s build + 20s test
+MISSED   crates/rbitcoin-node/src/config.rs:1029:21: replace || with && in NodeConfig::connect_matches_trust_peer in 4s build + 20s test
+MISSED   crates/rbitcoin-node/src/config.rs:1029:54: replace > with == in NodeConfig::connect_matches_trust_peer in 4s build + 19s test
+MISSED   crates/rbitcoin-node/src/config.rs:1029:54: replace > with >= in NodeConfig::connect_matches_trust_peer in 3s build + 20s test
+MISSED   crates/rbitcoin-node/src/config.rs:1034:34: delete ! in NodeConfig::connect_matches_trust_peer in 4s build + 20s test
+MISSED   crates/rbitcoin-node/src/config.rs:1241:9: replace NodeConfig::rpc_cookie_path -> Option<PathBuf> with None in 4s build + 22s test
+MISSED   crates/rbitcoin-node/src/config.rs:1301:32: delete ! in NodeConfig::ensure_datadir in 5s build + 20s test
+MISSED   crates/rbitcoin-node/src/config.rs:1471:13: delete match arm "discover_from_peers" in NodeConfig::apply_kv in 4s build + 20s test
+MISSED   crates/rbitcoin-node/src/config.rs:1518:13: delete match arm "tor_control_cookie" in NodeConfig::apply_kv in 3s build + 5s test
+MISSED   crates/rbitcoin-node/src/config.rs:1744:13: delete match arm "rpcuser" | "rpcpassword" in NodeConfig::apply_kv in 3s build + 5s test
+MISSED   crates/rbitcoin-node/src/config.rs:1758:13: delete match arm "rpc_token_file" in NodeConfig::apply_kv in 4s build + 5s test
+MISSED   crates/rbitcoin-node/src/config.rs:1779:13: delete match arm "test_activation_height" in NodeConfig::apply_kv in 3s build + 5s test
+MISSED   crates/rbitcoin-node/src/config.rs:1827:13: delete match arm "net_permission_relay" in NodeConfig::apply_kv in 4s build + 5s test
+MISSED   crates/rbitcoin-node/src/config.rs:1830:13: delete match arm "net_permission_force_relay" in NodeConfig::apply_kv in 4s build + 5s test
+MISSED   crates/rbitcoin-node/src/config.rs:1845:13: delete match arm "mempool_expiry" in NodeConfig::apply_kv in 3s build + 5s test
+MISSED   crates/rbitcoin-node/src/config.rs:1851:13: delete match arm "startup_notify" in NodeConfig::apply_kv in 4s build + 5s test
+MISSED   crates/rbitcoin-node/src/config.rs:1857:13: delete match arm "limit_cluster_count" in NodeConfig::apply_kv in 3s build + 5s test
+MISSED   crates/rbitcoin-node/src/config.rs:1875:13: delete match arm "limit_cluster_size" in NodeConfig::apply_kv in 4s build + 5s test
+MISSED   crates/rbitcoin-node/src/config.rs:1896:13: delete match arm "peer_timeout" in NodeConfig::apply_kv in 3s build + 5s test
+MISSED   crates/rbitcoin-node/src/config.rs:1976:13: delete match arm "max_run_secs" in NodeConfig::apply_kv in 3s build + 5s test
+MISSED   crates/rbitcoin-node/src/config.rs:1985:13: delete match arm "mock_time" in NodeConfig::apply_kv in 4s build + 5s test
+MISSED   crates/rbitcoin-node/src/config.rs:2009:13: delete match arm "block_version" in NodeConfig::apply_kv in 3s build + 5s test
+MISSED   crates/rbitcoin-node/src/config.rs:2015:13: delete match arm "block_min_tx_fee" in NodeConfig::apply_kv in 4s build + 5s test
+MISSED   crates/rbitcoin-node/src/config.rs:2025:13: delete match arm "alert_notify" in NodeConfig::apply_kv in 3s build + 5s test
+MISSED   crates/rbitcoin-node/src/config.rs:1527:65: replace || with && in NodeConfig::apply_kv in 3s build + 5s test
