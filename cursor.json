@@ -1,14 +1,14 @@
 {
   "new_base": "b86a1800e3117db21ef89e518bf66d647907f524",
   "new_skip": 0,
-  "old_index": 15611,
-  "old_name": "crates/rbitcoin-node/src/config.rs:1632:26: replace || with && in NodeConfig::apply_kv",
+  "old_index": 18742,
+  "old_name": "crates/rbitcoin-primitives/src/script_worker.rs:12:5: replace set_script_worker with ()",
   "new_cap_used": false,
   "run_id": "45970872855",
-  "new_len": 4304,
-  "old_len": 32728,
+  "new_len": 0,
+  "old_len": 37032,
   "new_remaining": 0,
-  "old_remaining": 32171,
-  "completed_new": 249,
-  "completed_old": 557
+  "old_remaining": 35904,
+  "completed_new": 0,
+  "completed_old": 1128
 }
